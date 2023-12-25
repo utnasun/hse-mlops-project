@@ -1,0 +1,22 @@
+data:
+  train_path: data/train.csv
+  test_path: data/test.csv
+
+model:
+  save_path: models/catboost_model.cbm
+  iterations: 5000
+  learning_rate: 0.1
+  depth: 6
+  l2_leaf_reg: 3
+  eval_metric: RMSE
+
+mlflow:
+  tracking_uri: "http://128.0.1.1:8080"
+  experiment_name: "CatBoost_MLOps"
+
+hydra:
+    run:
+        dir: hydra_logs/run_${now:%Y%m%d_%H%M%S}
+
+predictions:
+  save_path: predictions/predictions.csv
