@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "mlops-project"
+name = "hse_mlops_project"
 version = "0.1.0"
 description = "Project for Applied MLops course"
 authors = ["Utnasun Muniev <uamuniev@edu.hse.ru>"]
