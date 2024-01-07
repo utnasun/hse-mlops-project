@@ -1,4 +1,4 @@
-# Applied MLOps project @ HSE MLDS 
+# Applied MLOps project @ HSE MLDS
 
 ## ML Task
 House price prediction using [kaggle dataset](https://www.kaggle.com/datasets/muhammadbinimran/housing-price-prediction-data/data).
