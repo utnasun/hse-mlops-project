@@ -8,10 +8,10 @@ def preprocess_data(data_path: str) -> tuple:
         df["Neighborhood"].map({"Suburb": 0, "Rural": 1, "Urban": 2}).astype(int)
     )
 
-    X = df.drop("Price", axis=1)
-    y = df["Price"]
+    X_preprocessed = df.drop("Price", axis=1)
+    target = df["Price"]
 
-    return X, y
+    return X_preprocessed, target
 
 
 def plot_train_loss(train_losses):
